@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>div在排版中的作用</title>
+    <style>
+        div.hot {
+            font-size: 13px;
+            float: left;
+            padding-right: 6px;
+            border-right: 2px solid blue;
+        }
+        
+        div.new {
+            font-size: 13px;
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="hot">
+            <h2>热门秃头排行</h2>
+            <ol>
+                <li>前端开发面试心法</li>
+                <li>零基础学习html</li>
+                <li>javascript全攻略</li>
+            </ol>
+        </div>
+    </div>
+    <div>
+        <div class="hot">
+            <h2>最新课程排行</h2>
+            <ol>
+                <li>版本管理工具介绍-Git篇</li>
+                <li>Canvas绘图详解</li>
+                <li>QQ5.0侧滑菜单</li>
+            </ol>
+        </div>
+    </div>
+</body>
+
+</html>
+<!--<div>标签的作用相当于一个容器，可以把一些独立的逻辑部分划分出来放在一个<div>标签中。
+    逻辑部分就是:页面上相互关联的一组元素。如，网页中的独立的栏目版块。-->

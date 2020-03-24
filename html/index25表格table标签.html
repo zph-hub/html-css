@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>认识table表格标签</title>
+</head>
+
+<body>
+    <table>
+        <tbody>
+            <tr>
+                <th>班级</th>
+                <th>学生数</th>
+                <th>平均成绩</th>
+            </tr>
+            <tr>
+                <td>一班</td>
+                <td>30</td>
+                <td>85</td>
+            </tr>
+            <tr>
+                <td>二班</td>
+                <td>35</td>
+                <td>85</td>
+            </tr>
+            <tr>
+                <td>三班</td>
+                <td>32</td>
+                <td>80</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
+<!--
+    创建表格的四个元素:
+    table、tbody、tr、th、td
+1、<table>...</table>:整个表格以<table>标记开始，结束以</table>标记结束
+2、<tbody>...</tbody>:如果不加<thead><tbody><tfooter>,table表格加载完后才显示。加上这些表格结构，tbody包含行的内容下载完优先显示，不必等待表格结束后在显示。(通俗理解table可以按结构一块块的显示，不在等整个表格加载完后显示)
+3、<tr>...<tr>:表格的一行，所以有几对tr，表格就有几行
+4、<td>...<td>:表格的一个单元格，一行中包含几对<td>...<td>,说明一行中就有几列。
+5、<th>...<th>:表格表头，即：表格的头部的一个单元格。
+    th标签文本默认粗体并居中
+    table表格没有添加css时是没有表格线的。
+-->

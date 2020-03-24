@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>重置按钮</title>
+</head>
+
+<body>
+    <form action="save.php" method="post">
+        <label>爱好:</label>
+        <select>
+                <option value="看书">看书</option>
+                <option value="旅游" selected="selected">旅游</option>
+                <option value="运动">运动</option>
+                <option value="购物">购物</option>
+                <option value="唱歌">唱歌</option>
+            </select>
+        <input type="submit" value="确定" />
+        <input type="reset" value="重置" />
+    </form>
+</body>
+
+</html>
+<!--
+1、当type值设置为reset时，按钮才有重置作用。
+2、<input>里的value为：按钮上显示的字。
+    <option>里的value为:向服务器提交的值。
+语法：
+    <input type="reset" value="重置">
+3、option标签通常需要使用value属性，此属性会指示出被送往服务器的内容，必须与select元素配合使用，在select内部，否则无意义
+-->

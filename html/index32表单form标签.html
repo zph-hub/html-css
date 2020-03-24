@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>表单标签form</title>
+</head>
+
+<body>
+    <form method="post" action="save.php">
+        <label for="username">用户名</label>
+        <input type="text" name="username" id="username" value="" />
+        <label for="pass">密码</label>
+        <input type="password" name="pass" id="pass" value="" />
+        <input type="submit" value="确定" name="submit" />
+        <input type="reset" value="重置" name="reset">
+    </form>
+</body>
+
+</html>
+<!--
+    网站与用户交互需要使用HTML表单(form)。表单是可以把浏览者输入的数据传送到服务器端，这样服务器端程序就可以处理表单传过来的数据。
+语法：
+    <form method="传送方式" action="服务器文件"></form>
+1、<form>标签是成对出现的，以<form>开始，以</form>结束。
+2、action：浏览者输入的数据被传送到的地方，比如一个php页面(save.php)。
+3、method:数据传送的方式(get/post),post是传到服务器上，get是从服务器上获得。
+4、所有的表单控件(文本框，文本域，单选框，复选框等)都必须放在<form></form>标签之间。
+-->

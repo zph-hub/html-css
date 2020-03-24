@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>下拉列表框select</title>
+</head>
+
+<body>
+    <form action="save.php" method="post">
+        <label>爱好:</label>
+        <select>
+                <option value="看书">看书</option>
+                <option value="旅游" selected="selected">旅游</option>
+                <option value="运动">运动</option>
+                <option value="购物">购物</option>
+            </select>
+
+    </form>
+</body>
+
+</html>
+<!--
+    下拉列表在网页中常用
+    语法:
+    <select>
+    <option value="向服务器提交的值">显示的值</option>
+    <option value="向服务器提交的值">显示的值</option>
+    <option value="向服务器提交的值">显示的值</option>
+    </select>
+1、设置selected="selected"属性，则该选项就被默认选中。
+2、option标签通常需要使用value属性，此属性会指示出被送往服务器的内容，必须与select元素配合使用，在select内部，否则无意义
+-->

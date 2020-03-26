@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>浮动模型float</title>
+    <style type="text/css">
+        div {
+            border: 2px red solid;
+            width: 200px;
+            height: 400px;
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div>栏目1</div>
+    <div>栏目2</div>
+</body>
+
+</html>
+<!--
+    块状元素都是独占一行，如果我们想让两个块状元素并排显示，我们可以使用浮动模型。
+    任何元素默认情况下是不能浮动的，但可以用css定义浮动，如：div、p、table、img等元素都可以被定义为浮动。
+    如上代码是左浮动，可实现两个栏都是左对齐。
+    若想右对齐可将上面的left换为right。
+    若想两个元素一左一右，如下：
+    <div>{
+            width:200px;
+            height:200px;
+            border:2px red solid;    
+    }
+    #div1{float:left;}
+    #div2{float:right;}
+-->

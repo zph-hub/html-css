@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html charset=utf-8">
+    <title>相对定位position:relative</title>
+    <style type="text/css">
+        #div1 {
+            width: 200px;
+            height: 200px;
+            border: 2px red solid;
+            position: relative;
+            left: 100px;
+            /*向右移动了100像素(距离原来左边位置100像素)*/
+            top: 50px;
+            /*向下移动50像素(距离原来上边位置50像素)*/
+        }
+    </style>
+</head>
+
+<body>
+    <div id="div1">111111</div><span>偏移前的位置还保留不动，覆盖不了前面的div没有偏移前的位置</span>
+</body>
+
+</html>
+<!--
+    position:relative可以通过left、right、top、bottom属性确定元素在正常文档流中的偏移位置。
+1、相对定位完成的过程是首先按float方式生成一个元素(并且元素像层一样浮动了起来)，然后相对以前的位置移动，移动的方向和幅度由left、right、top、bottom属性确定，偏移前的位置保留不动。
+-->

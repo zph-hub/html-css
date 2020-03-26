@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>边距margin</title>
+    <style type="text/css">
+        div {
+            width: 300px;
+            height: 300px;
+            border: 1px solid red;
+        }
+        
+        #box1 {
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box1">box1</div>
+    <div>box2</div>
+</body>
+
+</html>
+<!--
+    元素与其他元素之间的距离可以使用边界(margin)设置
+    边界也是上、右、下、左
+    例:
+    div{margin:20px 10px 15px 30px;}
+    分开写为：
+    div{
+        magin-top:20px;
+        magin-right:10px;
+        margin-bottom:15px;
+        margin-left:30px;
+    }
+如果上、右、下、左边界都为10px,可以这样写：
+div{margin:10px;}
+如果上下边界一样都为10px,左右一样为20px,可这样写:
+div{margin:10px 20px;}
+
+
+总结：padding和margin区别:padding在边框里，margin在边框外。
+-->

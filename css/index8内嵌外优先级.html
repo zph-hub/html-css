@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>内联式、嵌入式、外联式优先级</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        span {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <p>慕课网,<span style="color:pink">超酷的互联网</span>、IT技术免费学习平台，创新的网络一站式学习、实践体验;服务及时贴心，内容专业、有趣易学。专注服务互联网工程师快速成为技术高手！</p>
+</body>
+
+</html>
+<!--优先级:内联式>嵌入式>外部式
+    嵌入式大于外部式前提是:嵌入式css样式的位置一定在外部式的后面。总的来说就是就近原则
+优先级有一个大前提是：内联式、嵌入式、外部式样式表中css样式是在相同权值的情况下-->

@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>重要性!important</title>
+    <style type="text/css">
+        p {
+            color: red!important;
+        }
+        
+        p.first {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>练习</h1>
+    <p>三年级时，我还是一个胆小如鼠的小女孩，上课从来不敢回答老师提出的问题。我可去你大爷的吧。</p>
+    <p>到了三年级下学期，我们班上了一节公开课，老师提出了一个很简单的问题，我他么竟然不会，开什么玩笑？</p>
+</body>
+
+</html>
+
+<!--
+    要为某些样式设置具有最高权值时，我们可以使用!important来解决。
+    如上例，文本将显示红色。
+注意：!important要写在分号的前面。
+1、这里注意当网页制作者不设置css样式时，浏览器会按照自己的一套样式来显示网页。并且用户也可以在浏览器中设置自己习惯的样式，比如有的用户习惯把字号设置为大一些，使其查看网页的文本更加清楚。这时注意样式优先级为：浏览器默认的样式 < 网页制作者样式 < 用户自己设置的样式，但记住!important优先级样式是个例外，权值高于用户自己设置的样式。
+-->

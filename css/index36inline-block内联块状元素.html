@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>内联块状元素</title>
+    <style type="text/css">
+        a {
+            display: inline-block;
+            /*内联块状元素代码*/
+            width: 20px;
+            /*默认情况下宽度不起作用，因为内联元素宽高不能改变*/
+            height: 20px;
+            /*默认情况下高度不起作用，因为内联元素宽高不能改变*/
+            background: pink;
+            /*设置背景颜色为粉色*/
+            text-align: center;
+            /*设置文本居中显示*/
+        }
+    </style>
+</head>
+
+<body>
+    <a>1</a>
+    <a>2</a>
+    <a>3</a>
+    <a>4</a>
+</body>
+
+</html>
+<!--
+    display:inline-block可以将元素设置为内联块状元素，<img>、<input>标签就是内联块状标签。
+    内联块状元素特点:
+    1、和其他元素都在一行上；
+    2、元素的高度、宽度、行高以及顶和底边距都可以设置。
+-->

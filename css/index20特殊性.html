@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>特殊性</title>
+    <style type="text/css">
+        p {
+            color: red;
+        }
+        
+        .first {
+            color: green;
+        }
+        /*因为权值高显示为绿色*/
+        
+        span {
+            color: pink;
+        }
+        /*设置为粉色*/
+        
+        p span {
+            color: purple;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>勇气</h1>
+    <p class="first">三年级时。我还是一个<span>胆小如鼠</span>的小女孩，上课从来不敢回答老师提出的问题。生怕回答错误了老师会批评我，就一直没有这个勇气来回答老师提出的问题。学校举办的活动我也没有勇气参加。</p>
+    <p>到了三年级下学期时，我们班上了一节公开课，老师提出了一个很简单的问题，班里很多同学都举手了，甚至成绩比我差很多的，也举手了，还说着："我来，我来."我环顾了四周，就我没有举手。</p>
+</body>
+
+</html>
+<!--
+    当我们为同一元素设置了不同的css样式代码，那么元素会启用权值高的那一个css样式。
+1、继承的权值最低为0.1.标签的权值为1，类选择符的权值为10，ID选择符的权值最高位100。
+
+上例中.first权值确实高，但当它作用到span里面就属于继承，继承的权值是最低的。标签的权值为1。但p span{color:purple}标签权值为2,所以会显示紫色，而不是绿色、粉色。
+-->

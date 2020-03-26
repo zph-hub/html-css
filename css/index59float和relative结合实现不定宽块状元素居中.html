@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html charset=utf-8">
+    <title>不定宽块状元素水平居中(三)</title>
+    <style type="text/css">
+        .container {
+            float: left;
+            position: relative;
+            left: 50%;
+        }
+        
+        .container ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            left: -50%;
+        }
+        
+        .container li {
+            float: left;
+            display: iline;
+            margin-right: 8px;
+        }
+        
+        .wrap {
+            clear: both;
+            /*对多个浮动float:left的清除，第三个与第四个也可以不用left,就不用clear了。*/
+            float: left;
+            position: relative;
+            left: 50%;
+        }
+        
+        .wrap-center {
+            background: #ccc;
+            position: relative;
+            left: -50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <ul>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+        </ul>
+    </div>
+    <div class="wrap">
+        <div class="wrap-center">狗屎方法学的一脸懵逼</div>
+    </div>
+</body>
+
+</html>
+<!-- 
+    设置浮动和相对定位来实现不定宽块状元素水平居中，即：
+通过给父元素设置float：left或right,然后给父元素设置position:relative和left:50%,子元素设置position:relative和left:-50%来实现水平居中。
+
+我们可以这样理解：假象ul层的父层(即上面例子中的div层)中间有条平分线将ul层的父层(div层)平均分为两份，ul层的css代码是将ul层的最左端与ul层的父层(div层)的平分线对齐；而li层的css代码则是将li层的平分线与ul层的最左端(也就是div层的平分线)对齐，从而实现li层的居中。
+-->

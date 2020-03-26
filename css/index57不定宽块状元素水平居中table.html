@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>不定宽块状元素水平居中方法(一)</title>
+    <style type="text/css">
+        table {
+            margin: 0 auto;
+        }
+        
+        .wrap {
+            background: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>我的第一行文本</li>
+                            <li>我的第二行文本</li>
+                            <li>我的第三行文本</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <table>
+        <tbody>
+            <tr>
+                <td>
+                    <ul>
+                        <li>
+                            <div class="wrap">
+                                设置我所在的div容器水平居中
+                            </div>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
+<!-- 
+    不定宽度的块状元素居中方法一：加入table标签。
+    1、为需要设置居中的元素外面加入一个table标签(包括<tbody>、<tr>、<td>)。
+    2、为这个table设置“左右margin居中”即：table{margin:0 auto;}
+如上例。
+-->

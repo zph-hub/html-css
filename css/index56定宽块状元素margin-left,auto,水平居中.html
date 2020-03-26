@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>定宽块状元素水平居中</title>
+    <style type="text/css">
+        div {
+            border: 1px solid red;
+            /*为了显示居中效果明显，为div设置了边框*/
+            width: 200px;
+            /*定宽*/
+            margin: 20px auto;
+            /*margin-left与margin-right设置为auto*/
+        }
+        /*元素的"上下margin"是可以随意设置的*/
+    </style>
+</head>
+
+<body>
+    <div>我是定宽块状元素，我要水平居中显示</div>
+</body>
+
+</html>
+<!-- 
+    满足定宽和块状两个条件的元素是可以通过设置“左右margin”值为“auto”来实现居中的。如上例
+-->

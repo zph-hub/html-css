@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>隐性改变display类型</title>
+    <style type="text/css">
+        .container a {
+            float: left;
+            /*position:absolute与float:left或right,只要html代码中出现其中一个，元素的display显示类型就会自动变为内联块状元素(display:inline-block),然后就可以设置元素的width和height了。*/
+            width: 300;
+            background: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <a href="http://www.baidu.com" target="_" title="再见">基础到此结束</a>
+    </div>
+</body>
+
+</html>

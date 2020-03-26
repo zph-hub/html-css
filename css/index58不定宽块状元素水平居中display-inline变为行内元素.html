@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>不定宽块状元素水平居中</title>
+    <style type="text/css">
+        .container {
+            text-align: center
+        }
+        
+        .container ul {
+            list-style: none;
+            /*设置列表项目样式为不使用项目符号*/
+            margin: 0;
+            padding: 0;
+            display: inline;
+        }
+        /*margin:0;padding:0(消除文本与div边框之间的间隙)*/
+        
+        .container li {
+            margin-right: 8px;
+            display: inline;
+            /*变为行内元素*/
+        }
+        /*margin-right:8px(设置li文本之间的间隔)*/
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <ul>
+            <li><a href="#">1234</a></li>
+            <li><a href="#">5678</a></li>
+            <li><a href="#">2345</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>
+<!-- 
+    不定宽块状元素水平居中第二种方法是：
+    改变块级元素的display为inline类型(设置为行内元素显示)，然后使用text-align:center来实现居中效果。
+list-style用于设置列表项目相关内容，list-style取值如下：
+    disc:默认值，实心圆。
+    circle:空心圆
+    square:实心方块
+    decimal:阿拉伯数字
+    lower-roman:小写罗马数字
+    upper-roman:大写罗马数字
+    lower-alpha:小写英文字母
+    upper-alpha:大写英文字母
+    none:不使用项目符号。
+-->

@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>字体缩写</title>
+    <style type="text/css">
+        body {
+            font: italic;
+            font-variant: small-caps;
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 1.6em;
+            font-family: "宋体"，sans-serif;
+        }
+        /*这个代码可缩写为:{font:italic small-caps bold 12px/1.5em "宋体",sans-serif}*/
+    </style>
+</head>
+
+<body>
+    <p>Littering a dark and dreary road lay the past relics of browser-specific tags, incompatible DOMs, broken CSS support, and abandoned browsers.</p>
+    <p>We must clear the mind of the past. Web enlightenment has been achieved thanks to the tireless efforts of folk like the W3C, WaSP, and the major browser creators.</p>
+    <p>The CSS Zen Garden invites you to relax and meditate on the important lessons of the masters. Begin to see with clarity. Learn to use the time-honored techniques in new and invigorating fashion. Become one with the web.</p>
+    <p>过去的浏览器特定标记，不兼容的DOM，破碎的CSS支持和废弃的浏览器遗留下了残酷而黑暗的道路。 我们必须清除过去的想法。由于W3C，WaSP和主要的浏览器创建者的不懈努力，Web的启蒙得以实现。 CSS Zen Garden邀请您放松和冥想大师的重要课程。开始清晰地看。学会以崭新而振奋的方式使用历史悠久的技术。与网络合而为一。</p>
+</body>
+
+</html>
+<!--
+    网页中字体的代码也有缩写方式，下面代码比较常用：
+    body{
+        font:12px/1.5em "宋体",sans-serif;
+    }只是有字号、行间距、中文字体、英文字体设置。
+
+1、font-variant属性主要用于定义小型大写字母文本。
+    small-caps:浏览器会显示小型大写字母的字体。
+2、sans-serif:专指西方国家文章中没有衬线的字体，与汉字字体中的黑体相对应。加上它能保证调用这个字体族里面的字体，因为大多数计算机里都有这种字体。
+3、缩写时font-size与line-height中间要加入“/”斜杠。
+4、使用简写时至少要指定font-size和font-family属性，其他的属性未指定将自动使用默认值。
+-->

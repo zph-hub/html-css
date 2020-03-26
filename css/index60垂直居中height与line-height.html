@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>垂直居中</title>
+    <style type="text/css">
+        .wrap {
+            text-align: center;
+        }
+        
+        .wrap h2 {
+            margin: 0;
+            height: 100px;
+            /*height与line-height高度一致*/
+            line-height: 100px;
+            background: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <h2>hi,imooc</h2>
+    </div>
+</body>
+
+</html>
+<!-- 
+    1、父元素高度确定的单行文本的竖直居中的方法是通过设置父元素的height和line-height高度一致来实现的。(height:该元素的高度，line-height:行高，指文本中，行与行之间的基线间的距离)。
+    2、line-height与font-size的计算值之差，在css中成为“行间距”。分为两半，分别加到一个文本行内容的顶部和底部。
+-->

@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>父元素高度确定的多行文本</title>
+    <style type="text/css">
+        .wrap {
+            height: 300px;
+            background: #ccc;
+        }
+        
+        table td {
+            height: 300px;
+            background: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tbody>
+            <tr>
+                <td class="wrap">
+                    <div>
+                        <p>看我是否可以居中</p>
+                        <p>看我是否可以居中</p>
+                        <p>看我是否可以居中</p>
+                        <p>看我是否可以居中</p>
+                        <p>看我是否可以居中</p>
+                        <p>看我是否可以居中</p>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table>
+        <tbody>
+            <tr>
+                <td>
+                    <div>
+                        <img src="E:/计算机实验/Desktop/健康卡/52da54ed0001ecfa04120172.jpg" title="蒙拉丽莎的微笑">
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
+
+<!-- 
+    父元素高度确定的多行文本、图片等的竖直居中方法一：
+    使用插入table(包括tbody、tr、td)标签，同时设置vertical-align:middle(因为td标签默认情况下就默认设置了vertical-align为middle,所以不需要显式地设置。)
+1、css中有一个用于竖直居中的属性vertical-align,在父元素设置此样式时，会对inline-block(内联块状元素)类型的子元素都有用。
+
+
+
+    方法二是不使用table标签添加container{
+                            display:table-cell;
+                            vertical-align:middle;
+    }不常用原因是不兼容IE6、7。
+-->

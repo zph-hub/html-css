@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>函数调用</title>
+    <script type="text/javascript">
+        function contxt() //定义函数
+        {
+            alert("哈哈，儿子，调用函数了，我是你爸爸!");
+        }
+        contxt(); //调用函数，直接写函数名
+    </script>
+</head>
+
+<body>
+    <form>
+        <input type="button" value="点击我" onclick="contxt()" />
+        <!--onclick为点击事件。-->
+    </form>
+</body>
+
+</html>
+<!-- 
+    函数是完成某个特定功能的一组语句。如果没有函数，完成任务可能需要很多的代码。这时我们就可以把完成特定功能的代码块放到一个函数里，直接调用这个函数，就省重复输入大量代码的麻烦。
+一、定义一个函数的基本语法如下:
+function 函数名()
+{
+    函数代码；
+}
+1、function:定义函数的关键字。
+2、“函数名”：你为函数取的名字。
+3、“函数代码”：完成特定功能的代码。
+
+函数定义好后，是不能自动执行的，所以要调用它，只需要在需要的位置写函数名就好了。
+如上例，在17行直接填入函数名：contxt()     括号不能忘。
+-->

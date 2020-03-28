@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>编程练习1</title>
+    <script type="text/javascript">
+        function zhao() {
+            var peng = confirm("是否打开窗口");
+            if (peng == true) {
+                var hui = prompt("请输入网址", "http://www.baidu.com");
+
+                if (hui !== null) {
+                    window.open(hui, "_blank", "width=400px,height=500px,menubar=no,toolbar=no");
+                } else {
+                    alert("再见!");
+                }
+            } else {
+                alert("再见啊");
+            }
+
+        }
+    </script>
+</head>
+
+<body>
+    <input type="button" value="在新窗口打开网站" onclick="zhao()" />
+</body>
+
+</html>

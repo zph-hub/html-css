@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>javascript-输出内容(document.write)</title>
+    <script type="text/javascript">
+        var mystr = "我是";
+        var mychar = "javascript";
+        document.write(mychar + "<br />")
+        document.write(mystr + mychar + "的忠实粉丝!");
+    </script>
+</head>
+
+<body></body>
+
+</html>
+
+<!-- 
+    document.write()可用于直接向HTML输出流写内容。简单的说就是直接在网页中输出内容。
+一、输出内容用""括起，直接输出""号内的内容。例：
+<script type="text/javascript">
+    document.write("I love JavaScript!");
+</script>
+二、通过变量，输出内容。例：
+<script type="text/javascript">
+    var mystr="hello world";
+    document.write(mystr);  直接写变量名，输出变量存储内容。
+</script>
+三、输出多项内容，内容之间用+号链接。
+<script type="text/javascript">
+    var mystr="hello";
+    document.write(mystr+"I love JavaScript");  多项内容之间用+号连接。
+</script>
+四、输出HTML标签，并起作用，标签使用""括起来。例：
+<script type="text/javascript">
+    var mystr="hello";
+    document.write(mystr+"<br />");  输出hello后，输出一个换行符。
+    document.write("javascript");
+</script>
+-->

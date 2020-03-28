@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>javascript-打开新的窗口(windows.open)</title>
+    <script type="text/javascript">
+        function Wopen() {
+            window.open('http://www.baidu.com', '_black', 'width=600px', 'height=400px', 'top=100px', 'left=0'); //打开百度网页，在新窗口打开，宽为600，高400，距屏顶100像素，屏左0像素。
+        }
+    </script>
+</head>
+
+<body>
+    <input name="button" type="button" onclick="Wopen()" value="点击我，打开新窗口!" />
+</body>
+
+</html>
+
+<!-- 
+    open()方法可以查找一个已经存在或者新建的浏览器窗口。
+语法：
+    window.open([URL],[窗口名称],[参数字符串])
+参数说明:
+URL:在窗口中要显示网页的网址或路径。
+窗口名称:被打开窗口的名称。
+    1、该名称由字母、数字、下划线字符组成。
+    2、"_top"、"_blank"、"_self"具有特殊意义的名称。
+        _blank:在新窗口显示目标网页
+        _self:在当前窗口显示目标网页。
+        _top:框架网页中在上部窗口中显示目标网页。
+    3、相同name的窗口只能创建一个，要想创建多个窗口则name不能相同。
+    4、name不能包含有空格。
+参数字符串:设置窗口参数，各参数用逗号隔开。
+参数        值                  说明
+top         number              窗口顶部离开屏幕顶部的像素数
+left        number              窗口左端离开屏幕左端的像素数
+width       number              窗口的宽度。
+height      number              窗口的高度
+menubar     yes,no              窗口有没有菜单
+toolbar     yes,no              窗口有没有工具条
+scrollbars  yes,no              窗口有没有滚动条
+status      yes,no              窗口有没有状态栏
+-->

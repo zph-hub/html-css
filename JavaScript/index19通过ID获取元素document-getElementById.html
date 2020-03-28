@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>document.getElementById</title>
+</head>
+
+<body>
+    <p id="con">javascript</p>
+    <script type="text/javascript">
+        var mychar = document.getElementById("con");
+        document.write("结果:" + mychar.innerHTML); //在最后输出时用的函数中若不加innerHTML则会出现提示中说明的null或［object HTMLParagraphElement］，但当加了inner则会显示标签p里面的内容，这就是函数inner的用途。
+    </script>
+</body>
+
+</html>
+<!-- 
+    通过id找到元素（标签）。
+语法：
+    document.getElementById("id");
+-->

@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>javascript-警告(alert消息对话框)</title>
+    <script type="text/javascript">
+        function rec() {
+            var mychar = "I love JavaScript";
+            alert(mychar);
+        }
+    </script>
+</head>
+
+<body>
+    <input name="button" type="button" onclick="rec()" value="点击我，弹出对话框">
+</body>
+
+</html>
+<!-- 
+    我们在访问网站的时候，有时会突然弹出一个小窗口，上面写着一段提示信息文字。如果你不点击"确定"，就不能对网页做任何操作，这个小窗口就是使用alert实现的。
+语法：
+    alert(字符串或变量);
+
+1、消息对话框通常可以用于调试程序。
+2、alert输出内容，可以是字符串或变量，与document.write相似。
+-->

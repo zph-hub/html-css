@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>className属性</title>
+    <style type="text/css">
+        .one {
+            border: 1px solid #eee;
+            width: 230px;
+            height: 50px;
+            background: #ccc;
+            color: red;
+        }
+        
+        .two {
+            border: 1px solid #ccc;
+            width: 230px;
+            height: 50px;
+            background: #9CF;
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="p1" class="two">JavaScipt使网页显示动态效果并实现与用户交互功能。</p>
+    <input type="button" value="添加样式" onclick="add()" />
+    <p id="p2" class="one">你是大沙雕。</p>
+    <input type="button" value="更改外观" onclick="modify()" />
+    <script type="text/javascript">
+        function add() {
+            var p1 = document.getElementById("p1");
+            p1.className = "one";
+        }
+
+        function modify() {
+            var p2 = document.getElementById("p2");
+            p2.className = "two";
+        }
+    </script>
+</body>
+
+</html>
+
+<!-- 
+    className属性设置或返回元素的class属性。
+语法: 
+        object.className=classname;
+作用：
+1、获取元素的class属性。
+2、为网页内的某个元素指定一个css样式来更改该元素的外观。
+-->

@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>改变HTML样式</title>
+</head>
+
+<body>
+    <h2 id="con">I love JavaScript</h2>
+    <p>JavaScript使网页显示动态效果并实现与用户交互功能。</p>
+    <script type="text/javascript">
+        var mychar = document.getElementById("con");
+        mychar.style.color = "red"; //修改h2标签的样式，将颜色设为红色。
+        mychar.style.backgroundColor = "#ccc"; //将背景颜色设为灰色。
+        mychar.style.width = "300px"; //修改h2标签的样式，将宽设为300px。
+    </script>
+</body>
+
+</html>
+
+<!-- 
+语法：
+    object.style.property=new style;
+注意:Object是获取的元素对象，如通过document.getElementById("id")获取的元素。
+属性表(property):
+backgroundColor             设置元素的背景颜色。
+height                      设置元素的高度。
+width                       设置元素的宽度。
+color                       设置文本的颜色。
+font                        在一行设置所有的字体属性。
+fontFamily                  设置元素的字体系列。
+fontSize                    设置元素的字体大小。
+-->
